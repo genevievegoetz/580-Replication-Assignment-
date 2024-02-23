@@ -199,7 +199,7 @@ Extension:
 
 
 For my extension, I decided to limit my control to states with the same political party alignment as Tennessee. Tennessee voted Republican in the 2000 and 2004 presidential elections. I therefore eliminated Delaware, DC, and Maryland, as these were states that did not vote Republican in both the 2000 and 2004 presidential election. 
-        I then removed these states’ fip codes from the “gen south” components of the replication package. That way, when the code refers to “South = 1” or variables marked South, it is actually referring to Republican Southern states. By doing this and rerunning the code, I generated the following tables and figures:
+        I then removed these states’ fip codes from the “gen south” components of the replication package. That way, when the code refers to “South = 1” or variables marked South, it is actually referring to Republican Southern states. This approach required a bit extra work as I had to then create new versions of not only run-cps-main-tables.do and create-cps-figures.do , but also fragment-prepare-cps-data.do , as this file contained information about the control group. By doing this and rerunning the code, I generated the following tables and figures:
 
 
 Table 1, Extended 
